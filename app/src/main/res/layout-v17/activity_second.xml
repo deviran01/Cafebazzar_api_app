@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:layoutDirection="ltr"
+    tools:context=".activitys.ActivitySecond">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#6f2dd7"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2">
+
+        <TextView
+            android:id="@+id/det_txt_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/vazir"
+            android:text="تهران"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/det_txt_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/vazir"
+            android:text="ایران"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/det_txt_cross"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/vazir"
+            android:gravity="center|right"
+            android:text="خیابان انقلاب"
+            android:textAlignment="textStart"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/det_txt_dis"
+            app:layout_constraintStart_toStartOf="@+id/det_txt_dis"
+            app:layout_constraintTop_toBottomOf="@+id/det_txt_dis"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/det_txt_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/vazir"
+            android:text="نام"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/det_txt_name"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/det_txt_name" />
+
+        <TextView
+            android:id="@+id/det_txt_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/vazir"
+            android:gravity="center|right"
+            android:text="میدان آزادی تهران"
+            android:textAlignment="textStart"
+            android:textColor="#FFF"
+            android:textDirection="rtl"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/det_txt_cross"
+            app:layout_constraintStart_toStartOf="@+id/det_txt_cross"
+            app:layout_constraintTop_toBottomOf="@+id/det_txt_cross"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/det_txt_dis"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/vazir"
+            android:gravity="center|right"
+            android:text="960 متر"
+            android:textAlignment="textStart"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/det_txt_name"
+            app:layout_constraintStart_toStartOf="@+id/det_txt_name"
+            app:layout_constraintTop_toBottomOf="@+id/det_txt_name"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/det_txt_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/vazir"
+            android:text="مسافت"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/det_txt_dis"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/det_txt_dis" />
+
+        <TextView
+            android:id="@+id/det_txt_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/vazir"
+            android:text="مسیر "
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/det_txt_cross"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/det_txt_cross" />
+
+        <TextView
+            android:id="@+id/det_txt_t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/vazir"
+            android:text="آدرس"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/det_txt_address"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/det_txt_address" />
+
+        <TextView
+            android:id="@+id/det_txt_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/vazir"
+            android:gravity="right"
+            android:text="برج آزادی"
+            android:textAlignment="textStart"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/det_txt_t3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            tools:ignore="RtlCompat,RtlHardcoded" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/det_btn_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/gradient_1"
+        android:fontFamily="@font/vazir"
+        android:text="بازگشت"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+</android.support.constraint.ConstraintLayout>

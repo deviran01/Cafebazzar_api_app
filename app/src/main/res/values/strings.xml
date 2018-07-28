@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cafebazzar</string>
+    <string name="meter">متر</string>
+    <string name="check_connection">"اتصال خود را چک کنید و مجددا امتحان بفرمائید"</string>
+    <string name="not_found">یافت نشد</string>
+    <string name="error_first_offline">اتصال خود را برای دریافت محتویات جدید بررسی کنید</string>
+    <string name="title_alert">دریافت اطلاعات از سرور</string>
+    <string name="please_wait">لطفا شکیبا باشید در حال دریافت اطلاعات از سرور</string>
+    <string name="end_list">موردی برای نمایش وجود ندارد</string>
+</resources>
